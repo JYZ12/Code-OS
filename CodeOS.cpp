@@ -14,6 +14,7 @@ void ver(){
 }
 void he(){
 	printf("\nKeywords:\n");
+	printf("- run\n");
 	printf("- help\n");
 	printf("- exit\n");
 	printf("- version\n");
@@ -26,7 +27,14 @@ void cp(){
 	
 }
 void run(){
-	
+	char wo[1001];
+	wo[0]='s';wo[1]='t';wo[2]='a';
+	wo[3]='r';wo[4]=wo[1];
+	int l=ml.length();
+	for(int i=4;i<l;i++){
+		wo[i+2]=ml[i];
+	}
+	system(wo);
 }
 void _open(){
 	
@@ -48,13 +56,15 @@ int main(){
 	printf("By JYZ12.\n");
 	printf("https://github.com/");
 	printf("JYZ12/Code-OS\n\n");
-//	cout<<"\n\n";
 	while(true){
 		xx(); in();
 		if(ml=="exit")break;
-		if(ml=="shutdown")sd();
-		if(ml=="version")ver();
-		if(ml=="help")he();
+		else if(ml=="shutdown")sd();
+		else if(ml=="version")ver();
+		else if(ml=="help")he();
+		else if(ml[0]=='r'\
+		&&ml[1]=='u'&&ml[2]=='n')run();
+		
 	}
 	return 0;
 }
