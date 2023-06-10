@@ -6,10 +6,8 @@ void xx(){printf(">Terminal< ");}
 void in(){getline(cin,ml);}
 void sd(){system("shutdown -p");}
 void ver(){
-	printf("\n-*- CodeOS -*-\n");
-	printf("Test Version  ");
-	printf("By JYZ12.\n");
-	printf("https://github.com/");
+	printf("\nCodeOS 1.0 By JYZ12.");
+	printf("\nhttps://github.com/");
 	printf("JYZ12/Code-OS\n\n");
 }
 void he(){
@@ -51,10 +49,8 @@ int main(){
 //    	nullptr
 //	);
 //	if (ret != S_OK)std::cout<<"download-failed!"<<std::endl;
-	printf("\tCodeOS\n");
-	printf("Test Version  ");
-	printf("By JYZ12.\n");
-	printf("https://github.com/");
+	printf("CodeOS 1.0 By JYZ12.");
+	printf("\nhttps://github.com/");
 	printf("JYZ12/Code-OS\n\n");
 	while(true){
 		xx(); in();
