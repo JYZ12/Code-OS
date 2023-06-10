@@ -2,11 +2,13 @@
 //#include <Urlmon.h>
 using namespace std;
 string ml;
+bool ve=0;
 void xx(){printf(">Terminal< ");}
 void in(){getline(cin,ml);}
 void sd(){system("shutdown -p");}
 void ver(){
-	printf("\nCodeOS 1.0 By JYZ12.");
+	if(ve)printf("\n");
+	printf("CodeOS 1.0 By JYZ12.");
 	printf("\nhttps://github.com/");
 	printf("JYZ12/Code-OS\n\n");
 }
@@ -49,9 +51,8 @@ int main(){
 //    	nullptr
 //	);
 //	if (ret != S_OK)std::cout<<"download-failed!"<<std::endl;
-	printf("CodeOS 1.0 By JYZ12.");
-	printf("\nhttps://github.com/");
-	printf("JYZ12/Code-OS\n\n");
+	ver();
+	ve=1;
 	while(true){
 		xx(); in();
 		if(ml=="exit")break;
