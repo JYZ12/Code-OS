@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-//#include <Urlmon.h>
 using namespace std;
 string ml;
 bool ve=0;
@@ -43,14 +42,6 @@ void del(){
 	
 }
 int main(){
-//	HRESULT ret = URLDownloadToFileW(
-//		nullptr,
-//		L"URL",
-//		L"NAME",
-//    	0,
-//    	nullptr
-//	);
-//	if (ret != S_OK)std::cout<<"download-failed!"<<std::endl;
 	ver();
 	ve=1;
 	while(true){
